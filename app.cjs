@@ -24,7 +24,15 @@ app.get('/shopping',(req,res)=>{
   res.render('home1');
 })
 
-
+app.get('/home',(req,res)=>{
+  res.render('home');
+})
+app.get('/profile',(req,res)=>{
+  res.render('profile');
+})
+app.get('/premium',(req,res)=>{
+  res.render('premium');
+})
 
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
